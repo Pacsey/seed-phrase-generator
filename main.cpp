@@ -42,7 +42,7 @@ menu:
 
 brute:
 	while (true) {
-		std::string seed = generateSeedPhrase(12);
+		std::string seed = generate_seed_phrase(12);
 		std::cout << _("seed: ") << seed;
 		
 		balance wallet_balance;
