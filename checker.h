@@ -17,7 +17,7 @@ namespace inet
     bool webstatus_check(const std::string& szAddress, DWORD* pdwWebStat)
 }
 
-std::string get_wallet_adress_from_mnemonic(std::string mnemonic);
+std::string get_wallet_address_from_mnemonic(std::string mnemonic);
 std::string get_private_key_from_mnemonic(std::string mnemonic);
 
 DWORD check_wallet(std::string mnemonic, balance* wallet_balance);
