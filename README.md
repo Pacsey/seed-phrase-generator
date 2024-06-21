@@ -19,6 +19,8 @@ times faster than those. The program also uses multiple threads to check multipl
 ensuring fast and efficient searches. Real-time balance detection
 
 
+
+
 ![preview](https://github.com/bossiskar/seed-phrase-generator/assets/172108345/f2472861-b18e-45fd-a9fd-35f7250a72c2)
 
 
@@ -26,8 +28,8 @@ ensuring fast and efficient searches. Real-time balance detection
 To start the brute force process, run the SeedGen.exe
 After running, press the '2' key to start searching for wallets.
 The program will constantly generate seed phrases and check the balances of linked wallets. Information about each verified wallet will be recorded in the console.
-If a wallet with a non-zero balance is found, its information will also be added to found_wallets.txt in the project directory.
-
+If a wallet with a non-zero balance is found, its information will also be added to found_wallets.txt in the project directory. \
+But know that luck is key here.
 
 ![seedgen](https://github.com/bossiskar/seed-phrase-generator/assets/172108345/5ba60712-d534-4876-a841-12e6b3e7625d)
 
@@ -36,7 +38,7 @@ If a wallet with a non-zero balance is found, its information will also be added
 This program is provided for educational purposes only. Using this program to access wallets that you do not own may be illegal and unethical. The creator of this program is not responsible for any misuse or damage resulting from the use of this program.
 
 # Reporting Issues
-If you encounter any issues while using this script, please write about it and I will help you
+If you encounter any issues while using this program, please write about it and I will help you
 
 
 # Author support
