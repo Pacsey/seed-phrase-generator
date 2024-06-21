@@ -18,8 +18,13 @@ namespace inet
 }
 
 std::string get_wallet_adress_from_mnemonic(std::string mnemonic);
-std::string get_private_key_form_mnemonic(std::string mnemonic);
+std::string get_private_key_from_mnemonic(std::string mnemonic);
 
 DWORD check_wallet(std::string mnemonic, balance* wallet_balance);
 
 bool is_empty(balance b);
+
+float get_btc_price();
+float get_eth_price();
+float get_doge_price();
+float get_ltc_price();
