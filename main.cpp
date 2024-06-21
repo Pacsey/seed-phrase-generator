@@ -65,15 +65,15 @@ brute:
 			total_balance += balance.ltc * get_ltc_price();
 
 			std::string found_info = "address: " + get_wallet_address_from_mnemonic() + "\nmnemonic: " + seed + "\nprivate key: " + 
-				get_private_key_from_mnemonic() + "\nbanace: " + balance.btc + "BTC " + balance.eth + "ETH " + balance.doge + "DOGE " + balance.ltc + "LTC\n\n";
+				get_private_key_from_mnemonic() + "\nbalance: " + balance.btc + "BTC " + balance.eth + "ETH " + balance.doge + "DOGE " + balance.ltc + "LTC\n\n";
 			HANDLE hfile = CreateFileA("found_wallets.txt", FILE_ALL_ACCESS, NULL, nullptr, OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
 			WriteFile(hfile, found_info.c_str(), found_info.size(), nullptr, nullptr);
 			CloseHandle(hfile);
 		}
 
 		std::cout << std::endl;
-		std::string tittle = info + _as(" | ") + _as("Checked seeds: ") + std::to_string(seed_count) + _as(" | Total balance: $") + std::to_string(total_balance);
-		SetConsoleTitleA(tittle.c_str());
+		std::string title = info + _as(" | ") + _as("Checked seeds: ") + std::to_string(seed_count) + _as(" | Total balance: $") + std::to_string(total_balance);
+		SetConsoleTitleA(title.c_str());
 		++seed_count;
 
 		if ((seed_count % 10000000) == 0) {
