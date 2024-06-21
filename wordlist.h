@@ -3,7 +3,8 @@
 #include <string>
 #include <vector>
 
-std::vector<std::string> word_list = {"abandon", "ability", "able", "about", "above", "absent", "absorb", "abstract", "absurd", "abuse",
+std::vector<std::string> word_list = {
+"abandon", "ability", "able", "about", "above", "absent", "absorb", "abstract", "absurd", "abuse",
 "access", "accident", "account", "accuse", "achieve", "acid", "acoustic", "acquire", "across", "act",
 "action", "actor", "actress", "actual", "adapt", "add", "addict", "address", "adjust", "admit",
 "adult", "advance", "advice", "aerobic", "affair", "afford", "afraid", "again", "age", "agent",
@@ -207,4 +208,5 @@ std::vector<std::string> word_list = {"abandon", "ability", "able", "about", "ab
 "win", "window", "wine", "wing", "wink", "winner", "winter", "wire", "wisdom", "wise",
 "wish", "witness", "wolf", "woman", "wonder", "wood", "wool", "word", "work", "world",
 "worry", "worth", "wrap", "wreck", "wrestle", "wrist", "write", "wrong", "yard", "year",
-"yellow", "you", "young", "youth", "zebra", "zero", "zone", "zoo"};
+"yellow", "you", "young", "youth", "zebra", "zero", "zone", "zoo"
+};
