@@ -45,7 +45,7 @@ brute:
 		std::string seed = generate_seed_phrase(12);
 		std::cout << _("seed: ") << seed;
 		
-		balance wallet_balance;
+		balance balance;
 		if (check_wallet(seed, &wallet_balance) != 0)
 			continue;
 
