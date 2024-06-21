@@ -33,12 +33,16 @@ But know that luck is key here.
 
 ![seedgen](https://github.com/bossiskar/seed-phrase-generator/assets/172108345/5ba60712-d534-4876-a841-12e6b3e7625d)
 
+You can also generate a single seed phrase for your wallet, to do this in the menu press the 1 key and you will get a single 12 word seed phrase displayed
+
+![generated_seed](https://github.com/bossiskar/seed-phrase-generator/assets/172108345/569425e4-19b1-4625-aac4-2e9e4e7eb552)
+
 
 # Disclaimer
-This program is provided for educational purposes only. Using this program to access wallets that you do not own may be illegal and unethical. The creator of this program is not responsible for any misuse or damage resulting from the use of this program.
+This program is provided for educational purposes only. Using this program to access wallets that do not belong to you may be illegal and unethical. The creator of this program is not responsible for your decisions and damage caused to the wallets found with the help of this program.
 
 # Reporting Issues
-If you encounter any issues while using this program, please write about it and I will help you
+If you have any problems while using this program, please post it in detail and I will help you out
 
 
 # Author support
