@@ -1,5 +1,6 @@
 
 // my github: https://github.com/bossiskar
+//repository: https://github.com/bossiskar/seed-phrase-generator
 
 #include <Windows.h>
 #include "generate.h"
@@ -45,11 +46,11 @@ brute:
 		std::string seed = generate_seed_phrase(12);
 		std::cout << _("seed: ") << seed;
 		
-		balance balance;
+		balance wallet_balance;
 		if (check_wallet(seed, &wallet_balance) != 0)
 			continue;
 
-		if (is_empty(balance)) {
+		if (is_empty(wallet_balance)) {
 			SetConsoleTextAttribute(hConsole, 4);
 			std::cout << _(" (empty)");
 			SetConsoleTextAttribute(hConsole, 7);
@@ -59,13 +60,13 @@ brute:
 			std::cout << _(" (with balance)");
 			SetConsoleTextAttribute(hConsole, 7);
 
-			total_balance += balance.btc * get_btc_price();
-			total_balance += balance.eth * get_eth_price();
-			total_balance += balance.doge * get_doge_price();
-			total_balance += balance.ltc * get_ltc_price();
+			total_balance += wallet_balance.btc * get_btc_price();
+			total_balance += wallet_balance.eth * get_eth_price();
+			total_balance += wallet_balance.doge * get_doge_price();
+			total_balance += wallet_balance.ltc * get_ltc_price();
 
 			std::string found_info = "address: " + get_wallet_address_from_mnemonic() + "\nmnemonic: " + seed + "\nprivate key: " + 
-				get_private_key_from_mnemonic() + "\nbalance: " + balance.btc + "BTC " + balance.eth + "ETH " + balance.doge + "DOGE " + balance.ltc + "LTC\n\n";
+				get_private_key_from_mnemonic() + "\nbalance: " + wallet_balance.btc + "BTC " + wallet_balance.eth + "ETH " + wallet_balance.doge + "DOGE " + wallet_balance.ltc + "LTC\n\n";
 			HANDLE hfile = CreateFileA("found_wallets.txt", FILE_ALL_ACCESS, NULL, nullptr, OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
 			WriteFile(hfile, found_info.c_str(), found_info.size(), nullptr, nullptr);
 			CloseHandle(hfile);
