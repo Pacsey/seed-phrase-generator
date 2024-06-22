@@ -10,7 +10,7 @@ HANDLE hConsole = NULL;
 
 int main(int argc, char** argv)
 {
-	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleTitleA("[Seed phrase Generate & Check - BTC; ETH; LTC; DOGE] - By Cosmo11");
 
 	DWORD webstat = 0;
