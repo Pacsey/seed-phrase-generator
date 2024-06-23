@@ -15,8 +15,8 @@ int main(int argc, char** argv)
 	std::string title = "[Seed phrase Generate & Check - BTC; ETH; LTC; DOGE] - By Cosmo11";
 	SetConsoleTitleA(title);
 
-	DWORD webstat = 0;
-	if(!inet::webstatus_check("https://www.blockchain.com/"))
+	DWORD webstatus = 0;
+	if(!inet::webstatus_check("https://www.blockchain.com/", webstatus) || webstatus != 200)
 	{
 		std::cout << ("Failed to access the blockchain. Check your internet connection\n");
 		Sleep(5000);
