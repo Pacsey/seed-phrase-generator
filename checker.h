@@ -8,7 +8,7 @@ struct balance
    float btc, eth, ltc, doge;
 };
 
-std::vector<std::string> websites = { "https://blockscan.com/", "https://etherscan.io/", "https://www.blockchain.com/explorer", "https://privatekeyfinder.io/mnemonic-converter", "https://mempool.space/", "https://live.blockcypher.com/ltc/", "https://dogechain.info/"};
+std::vector<std::string> websites = { "https://blockscan.com/", "https://www.blockchain.com/explorer", "https://etherscan.io/", "https://www.blockchain.com/explorer", "https://privatekeyfinder.io/mnemonic-converter", "https://mempool.space/", "https://live.blockcypher.com/ltc/", "https://dogechain.info/"};
 
 namespace inet
 {
