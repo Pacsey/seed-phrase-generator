@@ -12,12 +12,13 @@ HANDLE hConsole = NULL;
 int main(int argc, char** argv)
 {
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTitleA("[Seed phrase Generate & Check - BTC; ETH; LTC; DOGE] - By Cosmo11");
+	std::string title = "[Seed phrase Generate & Check - BTC; ETH; LTC; DOGE] - By Cosmo11";
+	SetConsoleTitleA(title);
 
 	DWORD webstat = 0;
 	if(!inet::webstatus_check("https://www.blockchain.com/"))
 	{
-		std::cout << _("Failed to access the blockchain. Check your internet connection\n");
+		std::cout << ("Failed to access the blockchain. Check your internet connection\n");
 		Sleep(5000);
 		exit(0);
 	}
@@ -27,12 +28,12 @@ int main(int argc, char** argv)
 	float total_balance = 0;
 
 menu:
-	std::cout << _("select an action:\n'1' - generate 1 seed phrase\n'2' - search for seed phrases with coins(BTC, ETH, LTC, DOGE)\n");
+	std::cout << ("select an action:\n'1' - generate 1 seed phrase\n'2' - search for seed phrases with coins(BTC, ETH, LTC, DOGE)\n");
 	while (true) {
 		if (GetAsyncKeyState('1') & 1) {
 			std::cout << "\n\n";
 			std::string seed = generate_seed_phrase(12);
-			std::cout << _("seed: ") << seed << "\n\n";
+			std::cout << ("seed: ") << seed << "\n\n";
 			goto menu;
 		}
 		else if (GetAsyncKeyState(('2')) & 1) {
@@ -52,12 +53,12 @@ brute:
 
 		if (is_empty(wallet_balance)) {
 			SetConsoleTextAttribute(hConsole, 4);
-			std::cout << _(" (empty)");
+			std::cout << (" (empty)");
 			SetConsoleTextAttribute(hConsole, 7);
 		}
 		else {
 			SetConsoleTextAttribute(hConsole, 2);
-			std::cout << _(" (with balance)");
+			std::cout << (" (with balance)");
 			SetConsoleTextAttribute(hConsole, 7);
 
 			total_balance += wallet_balance.btc * get_btc_price();
@@ -73,12 +74,12 @@ brute:
 		}
 
 		std::cout << std::endl;
-		std::string title = info + _as(" | ") + _as("Checked seeds: ") + std::to_string(seed_count) + _as(" | Total balance: $") + std::to_string(total_balance);
+		std::string new_title = title + (" | ") + ("Checked seeds: ") + std::to_string(seed_count) + (" | Total balance: $") + std::to_string(total_balance);
 		SetConsoleTitleA(title.c_str());
 		++seed_count;
 
 		if ((seed_count % 10000000) == 0) {
-			system(_("cls"));
+			system(("cls"));
 		}
 	}
 
