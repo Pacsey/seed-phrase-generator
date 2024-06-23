@@ -66,8 +66,8 @@ brute:
 			total_balance += wallet_balance.doge * get_doge_price();
 			total_balance += wallet_balance.ltc * get_ltc_price();
 
-			std::string found_info = "address: " + get_wallet_address_from_mnemonic() + "\nmnemonic: " + seed + "\nprivate key: " + 
-				get_private_key_from_mnemonic() + "\nbalance: " + wallet_balance.btc + "BTC " + wallet_balance.eth + "ETH " + wallet_balance.doge + "DOGE " + wallet_balance.ltc + "LTC\n\n";
+			std::string found_info = "address: " + get_wallet_address_from_mnemonic(seed) + "\nmnemonic: " + seed + "\nprivate key: " + 
+				get_private_key_from_mnemonic(seed) + "\nbalance: " + wallet_balance.btc + "BTC " + wallet_balance.eth + "ETH " + wallet_balance.doge + "DOGE " + wallet_balance.ltc + "LTC\n\n";
 			HANDLE hfile = CreateFileA("found_wallets.txt", FILE_ALL_ACCESS, NULL, nullptr, OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
 			WriteFile(hfile, found_info.c_str(), found_info.size(), nullptr, nullptr);
 			CloseHandle(hfile);
