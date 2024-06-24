@@ -2,7 +2,6 @@
 // my github: https://github.com/bossiskar
 // repository: https://github.com/bossiskar/seed-phrase-generator
 
-#include <Windows.h>
 #include "generate.h"
 #include "checker.h"
 
