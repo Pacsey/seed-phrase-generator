@@ -19,8 +19,6 @@ times faster than those. The program also uses multiple threads to check multipl
 ensuring fast and efficient searches. Real-time balance detection
 
 
-
-
 ![preview](https://github.com/bossiskar/seed-phrase-generator/assets/172108345/f2472861-b18e-45fd-a9fd-35f7250a72c2)
 
 
@@ -31,7 +29,8 @@ The program will constantly generate seed phrases and check the balances of link
 If a wallet with a non-zero balance is found, its information will also be added to found_wallets.txt in the project directory. \
 But know that luck is key here.
 
-![seedgen](https://github.com/bossiskar/seed-phrase-generator/assets/172108345/5ba60712-d534-4876-a841-12e6b3e7625d)
+![seedgen](https://github.com/bossiskar/seed-phrase-generator/assets/172108345/2410cbd3-83e3-418d-93d0-ec8133211bbd)
+
 
 You can also generate a single seed phrase for your wallet, to do this in the menu press the 1 key and you will get a single 12 word seed phrase displayed
 
