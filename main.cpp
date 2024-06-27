@@ -2,8 +2,10 @@
 // my github: https://github.com/bossiskar
 // repository: https://github.com/bossiskar/seed-phrase-generator
 
+#include <iostream>
 #include "generate.h"
 #include "checker.h"
+
 
 
 HANDLE hConsole = NULL;
@@ -12,10 +14,10 @@ int main(int argc, char** argv)
 {
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	std::string title = "[Seed phrase Generate & Check - BTC; ETH; LTC; DOGE] - By Cosmo11";
-	SetConsoleTitleA(title);
+	SetConsoleTitleA(title.c_str());
 
 	DWORD webstatus = 0;
-	if(!inet::webstatus_check("https://www.blockchain.com/", webstatus) || webstatus != 200)
+	if(!inet::webstatus_check("https://www.blockchain.com/", &webstatus) || webstatus != 200)
 	{
 		std::cout << ("Failed to access the blockchain. Check your internet connection\n");
 		Sleep(6000);
