@@ -11,6 +11,9 @@ Using this generator you can search for old forgotten or lost wallets with prese
   <hr style="border-radius: 2%; margin-top: 45px; margin-bottom: 50px;" noshade="" size="20" width="98%">
 </p>
 
+![Screenshot_168](https://github.com/bossiskar/seed-phrase-generator/assets/172108345/7055b0a8-8857-4568-b893-718459459964)
+
+
 
 # About the program
 This program can generate seed phrases, as well as search for wallets containing BTC, ETH, LTC, DOGE coins.
