@@ -76,9 +76,9 @@ brute:
 		}
 
 		std::cout << std::endl;
+		++seed_count;
 		std::string new_title = title + (" | Checked seeds: ") + std::to_string(seed_count) + (" | Total balance: $") + std::to_string(total_balance);
 		SetConsoleTitleA(title.c_str());
-		++seed_count;
 
 		if ((seed_count % 10000000) == 0) {
 			system("cls");
